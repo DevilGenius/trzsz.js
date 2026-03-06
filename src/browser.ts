@@ -1,6 +1,6 @@
 /**
  * trzsz: https://github.com/trzsz/trzsz.js
- * Copyright(c) 2023 Lonny Wong <lonnywong@qq.com>
+ * Copyright(c) 2022-2026 Lonny Wong <lonnywong@qq.com>
  * @license MIT
  */
 
@@ -174,7 +174,7 @@ class BrowserFileWriter implements TrzszFileWriter {
     return this.dir;
   }
 
-  public async writeFile(buf: Uint8Array) {
+  public async writeFile(buf: Uint8Array<ArrayBuffer>) {
     await this.writer.write(buf);
   }
 
